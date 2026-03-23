@@ -15,7 +15,7 @@ const App = () => {
     axios.get(api).then(data => {
       setData(data?.data?.Search);
     });
-  } , []);
+  } , [api]);
 
   const elName = (e) => {
     setName(e?.target?.value);
